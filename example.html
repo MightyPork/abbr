@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		abbr {border-bottom: 1px dashed black; cursor: help;}
+		abbr:hover {border-bottom-color: #1b6196;}
+	</style>
+
+	<!-- Include it -->
+	<script src="abbr.js"></script>
+
+	<script type="text/javascript">
+
+		function init() {
+			abbr({
+				// It supports various options,
+				// see the library file for reference.
+				words: {
+					'GNU/Linux': 'Combo of GNU utils and Linux Kernel.',
+					'Linux': 'Holy grail',
+					'Unix': "Not sure, google it!",
+					'operating system': 'something in a computer',
+					'system': 'order',
+					'automation': 'doing stuff by itself',
+					'free': 'not paid',
+					'open-source': 'With publicly available code.',
+					'Wikipedia': 'free online encyclopedia',
+					'formware': 'low level system code'
+				},
+				exclude: ['h1']
+			});
+		}
+
+	</script>
+</head>
+
+<body onload="init()"><!-- Use $(document).ready() if you have jQuery -->
+
+	<h1>Example text from Wikipedia</h1>
+
+	<h2>This is a text from Wikipedia</h2>
+
+	<p>
+		Linux (pronounced Listeni/ˈlɪnəks/ lin-uks or, less frequently, /ˈlaɪnəks/ lyn-uks) is a Unix-like and mostly POSIX-compliant computer
+		operating system assembled under the model of free and open-source software development and distribution. The defining component of
+		Linux is the Linux kernel, an operating system kernel first released on 5 October 1991 by Linus Torvalds. The Free Software Foundation
+		uses the name GNU/Linux to describe the operating system, which has led to some controversy.
+	</p>
+
+	<pre><code>
+		here be code. Linux Unix system. Not highlighted.
+	</code></pre>
+
+	<p>
+		Linux was originally developed as a free operating system for Intel x86–based personal computers, but has since been ported to more
+		computer hardware platforms than any other operating system. It is the leading operating system on servers and other big iron systems
+		such as mainframe computers and supercomputers, but is used on only around 1.5% of desktop computers. Linux also runs on embedded
+		systems, which are devices whose operating system is typically built into the firmware and is highly tailored to the system; this
+		includes mobile phones, tablet computers, network routers, facility automation controls, televisions and video game consoles. Android,
+		the most widely used operating system for tablets and smartphones, is built on top of the Linux kernel.
+	</p>
+
+	<p>
+		The development of Linux is one of the most prominent examples of free and open-source software collaboration. The underlying source
+		code may be used, modified, and distributed—commercially or non-commercially—by anyone under licenses such as the GNU General Public
+		License. Typically, Linux is packaged in a form known as a Linux distribution, for both desktop and server use. Some popular mainstream
+		Linux distributions include Debian, Ubuntu, Linux Mint, Fedora, openSUSE, Arch Linux, and the commercial Red Hat Enterprise Linux and
+		SUSE Linux Enterprise Server. Linux distributions include the Linux kernel, supporting utilities and libraries and usually a large
+		amount of application software to fulfill the distribution's intended use.
+	</p>
+
+	<p>
+		A distribution oriented toward desktop use will typically include X11, Wayland or Mir as the windowing system, and an accompanying
+		desktop environment such as GNOME or the KDE Software Compilation. Some such distributions may include a less resource intensive
+		desktop such as LXDE or Xfce, for use on older or less powerful computers. A distribution intended to run as a server may omit all
+		graphical environments from the standard install, and instead include other software to set up and operate a solution stack such as
+		LAMP. Because Linux is freely redistributable, anyone may create a distribution for any intended use.
+	</p>
+</body>
+</html>
