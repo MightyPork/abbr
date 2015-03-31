@@ -3,7 +3,13 @@ ABBR
 
 Abbr is a JavaScript library / function for finding, highlighting and annotating abbreviations in text.
 
-It needs no extra markup, all is done automatically. Just tell it what words you want to explain, and it'll do it.
+It goes through text and wrapps acronyms (or anything you want) in `<abbr>` tags (or other of choice), and gives them
+`title` attribute with explanation (again, customizable).
+
+It needs **no extra markup**, all is done automatically. Just tell it what words you want to explain, and it'll do it.
+
+Usage
+-----
 
 Abbr takes the following (default) arguments:
 
@@ -28,15 +34,7 @@ Abbr takes the following (default) arguments:
 
 All config options are optional (though, obviously, you don't want to leave `words` empty).
 
-To run it, simply call:
-
-```js
-abbr({
-	// Your options here
-});
-```
-
-For example:
+To run it, simply call (example):
 
 ```js
 abbr({
